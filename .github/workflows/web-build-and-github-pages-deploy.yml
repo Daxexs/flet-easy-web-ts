@@ -58,7 +58,7 @@ jobs:
 
     - name: Install Python Dependencies
       run: |
-        uv pip install --upgrade pip
+        uv pip install pip --upgrade
         uv pip install -r pyproject.toml
   
     - name: Setup Flutter ${{ env.FLUTTER_VERSION }}
