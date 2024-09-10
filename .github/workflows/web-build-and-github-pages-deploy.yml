@@ -44,12 +44,6 @@ jobs:
         enable-cache: true
         version: "0.4.8"
 
-    - name: Define a cache dependency glob
-      uses: astral-sh/setup-uv@v2
-      with:
-        enable-cache: true
-        cache-dependency-glob: "uv.lock"
-
     - name: Install Python ${{ env.PYTHON_VERSION }}
       run: uv python install ${{ env.PYTHON_VERSION }}
 
