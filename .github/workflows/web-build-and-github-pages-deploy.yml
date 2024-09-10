@@ -56,6 +56,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Create virtual environment uv
+      run: uv venv -p ${{ env.PYTHON_VERSION }}
+
     - name: Install Python Dependencies
       run: |
         uv pip install pip --upgrade
