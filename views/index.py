@@ -5,7 +5,7 @@ index = fs.AddPagesy()
 
 
 # We add a page
-@index.page(route="/home", title="Home")
+@index.page(route="/home", title="Home", page_clear=True)
 def index_page(data: fs.Datasy):
     view = data.view
 
