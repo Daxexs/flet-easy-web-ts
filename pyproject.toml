@@ -3,8 +3,8 @@ name = "app"
 version = "0.1.0"
 license = "Apache Software License 2.0"
 dependencies = [
-    "flet>=0.21.0",
-    "flet-easy==0.2.6.dev2",
+    "flet==0.24.1",
+    "flet-easy==0.2.6",
     ]
 
 [[project.authors]]
