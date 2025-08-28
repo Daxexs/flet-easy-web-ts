@@ -9,3 +9,29 @@ dependencies = [
 
 [[project.authors]]
 name = "Daxexs"
+
+[tool.flet]
+org = "com.mycompany"                         # --org
+product = "flet-easy-web"                         # --product
+company = "My Company"                        # --company
+copyright = "Copyright (C) 2024 by MyCompany" # --copyright
+build_number = 1                              # --build-number
+BUILD_VERSION = "0.1.0"
+
+
+[tool.flet.app]
+module = "main"
+path = "."
+#exclude = ["assets"]
+
+[tool.flet.compile]
+app = true
+packages = true
+cleanup = true
+
+[tool.flet.splash]
+color = ""      # --splash-color
+dark_color = "" # --splash-dark-color
+web = true     # --no-web-splash
+ios = false     # --no-ios-splash
+android = true # --no-android-splash
